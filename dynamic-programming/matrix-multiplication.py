@@ -13,3 +13,6 @@
 # cost[2, 4] = min((cost[2, 2] + cost[3, 4] + (d1 * d2 * d4)), (cost[2, 3] + cost[4, 4] + (d1 * d3 * d4))), where 2 <= k < 4.
 # cost[1, 2] = cost[1, 1] + cost[2, 2] + (d0 * d1 * d2), where 1 <= k < 2.
 # cost[3, 4] = cost[3, 3] + cost[4, 4] + (d2 * d3 * d4), where 3 <= k < 4.
+
+# To ensure correct parenthesization, it is important to maintain the k matrix while calculating the cost, 
+# which helps in identifying the optimal k value that produced the minimum cost solution.
